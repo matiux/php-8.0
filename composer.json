@@ -1,0 +1,34 @@
+{
+    "name": "matiux/php_80",
+    "type": "project",
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.18",
+        "mockery/mockery": "^1.4",
+        "phpunit/phpunit": "^9",
+        "psalm/attributes": "^0.1.0",
+        "psalm/plugin-mockery": "^0.7.0",
+        "psalm/plugin-phpunit": "^0.15.1",
+        "vimeo/psalm": "^4.4"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "PHP80\\": "src/PHP80/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\PHP80\\": "tests/PHP80/",
+            "Tests\\Util\\": "tests/Util/"
+        }
+    }
+}
